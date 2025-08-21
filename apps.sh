@@ -35,3 +35,13 @@ yay -S ttf-jetbrains-mono-nerd ttf-roboto ttf-kannada-font noto-fonts-cjk
 
 # Apps
 yay -S dolphin zen-browser-bin key-pass
+
+# Configure QT based apps(Dolphin)
+yay -S kvantum qt6ct breeze-icons kvantum-qt5 qt5ct papirus-icon-theme
+
+# TODO: Customize
+# Dolphin, Hyprland
+
+# TODO: Install
+# Screenshot, Wallpaper(hyprpaper), OBS Studios, Krita, Clipboard Manager(wayclip),
+# Hyprpicker, Video Player, Image Viewer, Timeshift for GRUB
