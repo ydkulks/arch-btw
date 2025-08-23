@@ -3,16 +3,19 @@ MenuBar=Disabled
 [ContentDisplay]
 UseShortRelativeDates=false
 
+[ContextMenu]
+ShowOpenInNewWindow=false
+ShowOpenInSplitView=false
+ShowOpenTerminal=false
+
 [DetailsMode]
 UseSystemFont=false
 ViewFont=Roboto,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
-[FoldersPanel]
-HiddenFilesShown=true
-
 [General]
 OpenExternallyCalledFolderInNewTab=true
 ShowFullPathInTitlebar=true
+ShowStatusBar=FullWidth
 Version=202
 ViewPropsTimestamp=2025,8,16,23,52,0.186
 
@@ -34,7 +37,7 @@ MenuBar=Disabled
 ToolButtonStyle=IconOnly
 
 [PreviewSettings]
-Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,directorythumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,opendocumentthumbnail,svgthumbnail,windowsexethumbnail,windowsimagethumbnail,gdk-pixbuf-thumbnailer,librsvg,jxl
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,heif,imagethumbnail,jpegthumbnail,jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,librsvg,svgthumbnail,gdk-pixbuf-thumbnailer
 
 [Toolbar mainToolBar]
 ToolButtonStyle=IconOnly

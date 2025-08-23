@@ -18,3 +18,4 @@ chmod +x $HOME/.config/hypr/scripts/wofi_toggle.sh
 ln -s $HOME/Projects/arch-btw/.config/dolphinrc $HOME/.config
 ln -s $HOME/Projects/arch-btw/.config/kdeglobals $HOME/.config
 ln -s $HOME/Projects/arch-btw/.config/qt6ct $HOME/.config
+ln -s $HOME/Projects/arch-btw/.config/mimeapps.list $HOME/.config

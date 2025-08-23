@@ -1,32 +1,35 @@
 window {
-    background-color: rgba(20, 20, 20, 0.9);
-    border-radius: 10px;
-    border: 2px solid #5e81ac; /* A nice, subtle blue border */
+  background-color: rgba(20, 20, 20, 1);
+  border-radius: 10px;
+  border: 2px solid #5e81ac;
+  /* A nice, subtle blue border */
 }
 
 #outer-box {
-    padding: 10px;
+  padding: 10px;
 }
 
 #input {
-    background-color: #3b4252; /* A dark gray-blue */
-    color: #eceff4;
-    border-radius: 5px;
-    border: none;
-    padding: 5px;
+  background-color: #3b4252;
+  /* A dark gray-blue */
+  color: #eceff4;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
 }
 
 #scroll {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 #entry {
-    background-color: transparent;
-    border: none;
-    padding: 5px;
-    color: #eceff4;
+  /* background-color: transparent; */
+  border: none;
+  padding: 5px;
+  color: #eceff4;
 }
 
 #entry:selected {
-    background-color: #4c566a; /* A different shade of gray-blue for the selected item */
+  background-color: #4c566a;
+  /* A different shade of gray-blue for the selected item */
 }

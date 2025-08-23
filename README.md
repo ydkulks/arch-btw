@@ -41,5 +41,8 @@ Arch config for programming
         - `~/.config/qt6ct/qt6ct.conf`
 
 2. **Wofi**:
-    - [Docs(5)][https://man.archlinux.org/man/wofi.5.en]
-    - [Keys(7)][https://man.archlinux.org/man/wofi-keys.7.en]
+    - [Docs(5)](https://man.archlinux.org/man/wofi.5.en)
+    - [Keys(7)](https://man.archlinux.org/man/wofi-keys.7.en)
+
+3. **Default Apps**:
+    - `~/.config/mimeapps.list`
