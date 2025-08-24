@@ -1,17 +1,21 @@
 [Added Associations]
+application/pdf=zen.desktop;
 application/x-extension-htm=zen.desktop;
 application/x-extension-html=zen.desktop;
 application/x-extension-shtml=zen.desktop;
 application/x-extension-xht=zen.desktop;
 application/x-extension-xhtml=zen.desktop;
 application/xhtml+xml=zen.desktop;
+image/jiff=qimgv.desktop;
 image/png=qimgv-4.desktop;qimgv-3.desktop;qimgv.desktop.desktop;qimgv.desktop;
 text/html=zen-browser-2.desktop;zen-browser.desktop;zen.desktop;
+video/mp4=mpv.desktop;
 x-scheme-handler/chrome=zen.desktop;
 x-scheme-handler/http=zen.desktop;
 x-scheme-handler/https=zen.desktop;
 
 [Default Applications]
+application/pdf=zen.desktop;
 application/x-extension-htm=zen.desktop
 application/x-extension-html=zen.desktop
 application/x-extension-shtml=zen.desktop
@@ -25,6 +29,7 @@ image/jpg=qimgv.desktop
 image/png=qimgv-4.desktop;
 image/tiff=qimgv.desktop
 text/html=zen-browser-2.desktop;
+video/mp4=mpv.desktop;
 x-scheme-handler/chrome=zen.desktop
 x-scheme-handler/http=zen.desktop
 x-scheme-handler/https=zen.desktop

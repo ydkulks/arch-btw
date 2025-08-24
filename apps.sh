@@ -17,6 +17,15 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 
 curl https://sh.rustup.rs -sSf | sh
 
+# Password Manager
+yay -S pass github-cli openssh
+sudo systemctl enable sshd.service
+sudo systemctl start sshd.service
+mkdir -p $GNUGPGHOME
+chmod 700 $GNUPGHOME
+ssh-keygen -t rsa
+ssh-agent ~/.ssh/id_rsa
+
 # TUI
 yay -S ly
 sudo systemctl enable ly.service

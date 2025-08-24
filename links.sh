@@ -19,3 +19,6 @@ ln -s $HOME/Projects/arch-btw/.config/dolphinrc $HOME/.config
 ln -s $HOME/Projects/arch-btw/.config/kdeglobals $HOME/.config
 ln -s $HOME/Projects/arch-btw/.config/qt6ct $HOME/.config
 ln -s $HOME/Projects/arch-btw/.config/mimeapps.list $HOME/.config
+
+# Create symlink for Hyprpaper
+ln -s $HOME/Projects/arch-btw/.config/hypr/hyprpaper.conf $HOME/.config/hypr/hyprpaper.conf
