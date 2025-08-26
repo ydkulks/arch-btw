@@ -44,5 +44,8 @@ Arch config for programming
     - [Docs(5)](https://man.archlinux.org/man/wofi.5.en)
     - [Keys(7)](https://man.archlinux.org/man/wofi-keys.7.en)
 
+    > [!NOTE]
+    > You can `add NoDisplay=true` to files in `/usr/share/applications/` to hide apps from being listed in wofi
+
 3. **Default Apps**:
     - `~/.config/mimeapps.list`

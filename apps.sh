@@ -49,7 +49,7 @@ yay -S dolphin zen-browser-bin keepass obs-studio krita vlc qimgv ark
 yay -S kvantum qt6ct breeze-icons kvantum-qt5 qt5ct papirus-icon-theme archlinux-xdg-menu kde-cli-tools
 
 # TODO: Customize
-# Icons, Wallpaper(hyprpaper)
+# Icons, Waybar
 
 # TODO: Install
 # Clipboard Manager(wayclip/clipse),
