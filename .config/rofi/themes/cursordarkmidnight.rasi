@@ -1,0 +1,100 @@
+// Cursor Dark Midnight
+* {
+  // Color palette
+  background: rgba(30, 33, 39, 97%);
+  foreground: rgba(235, 238, 244, 100%);
+  darkWhite: rgba(168, 171, 179, 100%);
+  black: rgba(83, 93, 113, 100%);
+  selectionBackground: rgba(49, 60, 71, 50%);
+
+  border-color: @selectionBackground;
+  background-color: transparent;
+  text-color: @foreground;
+
+  border: 0px;
+  margin: 1px;
+  padding: 1px;
+  spacing: 0px;
+}
+
+window {
+  transparency: "real";
+  padding-bottom: 10px;
+  width: 650px;
+  height: 400px;
+  padding: 20px;
+  background-color: @background;
+  border-radius: 10px;
+  border: 1px;
+}
+
+inputbar {
+  children: [prompt, entry, num-filtered-rows, textbox-prompt-sep, num-rows];
+}
+
+entry {
+  // Set margin-left to 10px
+  placeholder: "Search...";
+  placeholder-color: @black;
+  margin-left: 10px;
+}
+
+message {
+  padding: 0;
+  background-color: @background;
+}
+
+textbox-prompt-sep {
+  expand: false;
+  str: "/";
+  text-color: @black;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+num-rows,
+num-filtered-rows {
+  color: @black;
+}
+
+message {
+  padding: 20px;
+  background-color: @selectionBackground;
+}
+
+element-text {
+  color: @darkWhite;
+}
+
+element-text.selected {
+  color: @foreground;
+}
+
+element.selected {
+  background-color: @selectionBackground;
+  text-color: @selectionBackground;
+  border-radius: 5px;
+}
+
+scrollbar {
+  width:        4px ;
+  border:       0px;
+  handle-width: 8px ;
+  handle-color: @darkWhite;
+  padding:      0;
+  background-color: @darkWhite;
+}
+
+listview {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+button {
+  color: @black;
+}
+
+button.selected {
+  // background-color: @selectionBackground;
+  color: @foreground;
+}

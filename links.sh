@@ -12,9 +12,13 @@ ln -s $CONFIG_DIR/.config/hypr/hyprlock.conf $HOME/.config/hypr/hyprlock.conf
 # Create symlinks for Waybar
 ln -s $CONFIG_DIR/.config/waybar/ $HOME/.config/waybar
 
-# Create symlinks for Wofi
-ln -s $CONFIG_DIR/.config/wofi/ $HOME/.config/wofi
-chmod +x $HOME/.config/hypr/scripts/wofi_toggle.sh
+# # Create symlinks for Wofi
+# ln -s $CONFIG_DIR/.config/wofi/ $HOME/.config/wofi
+# chmod +x $HOME/.config/hypr/scripts/wofi_toggle.sh
+
+# Create symlinks for Rofi
+ln -s $CONFIG_DIR/.config/rofi/ $HOME/.config/rofi
+# chmod +x $HOME/.config/hypr/scripts/wofi_toggle.sh
 
 # Create symlinks for Dolphin
 ln -s $CONFIG_DIR/.config/dolphinrc $HOME/.config

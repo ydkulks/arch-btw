@@ -34,44 +34,40 @@ yay -S fastfetch btop htop yazi lazygit
 yay -S neovim
 
 # GUI
-yay -S kitty ghostty hyprland hyprlock-git hyprpicker hyprpaper hyprshot waybar wofi pavucontrol pipewire-pulse swaync libnotify bibata-cursor-theme-bin banana-cursor-bin
+yay -S kitty ghostty hyprland hyprlock-git hyprpicker hyprpaper hyprshot waybar rofi rofi-emoji wtype pavucontrol pipewire-pulse swaync libnotify bibata-cursor-theme-bin banana-cursor-bin
+
+# Rofi
+yay -S rofi rofi-emoji cliphist wl-clipboard rofi-calc
 
 # GPU (AMD Radeon RX 6700 XT)
 # yay -S mesa libva-mesa-driver vulkan-radeon
 
 # Fonts
-yay -S ttf-jetbrains-mono-nerd ttf-roboto ttf-kannada-font noto-fonts-cjk
+yay -S ttf-jetbrains-mono-nerd ttf-roboto ttf-kannada-font noto-fonts-cjk noto-fontse-emoji
 
 # Apps
-yay -S dolphin zen-browser-bin keepass obs-studio krita vlc qimgv ark
+yay -S dolphin zen-browser-bin keepass obs-studio krita qimgv ark
 
 # Configure QT based apps(Dolphin)
 yay -S kvantum qt6ct breeze-icons kvantum-qt5 qt5ct papirus-icon-theme archlinux-xdg-menu kde-cli-tools
 
 # TODO: Customize
-# Icons, Waybar
+# Swaync
+# Fastfetch
 
 # TODO: Install
-# Clipboard Manager(wayclip/clipse),
 # Timeshift for GRUB,
-# Logout Menu, Widgets
+# Widgets
 
-# TODO: Wofi Keymaps
-
-# TODO: Wofi Utils
-# Create a script with wofi to browse utilities like:
-# - Screenshot
-# - Wallpaper Manager
-# - Clipboard Manager
-# - Color Picker
-# - Image Viewer
-# - Music Player
-# - Video Player
-# - Icons
-# - Widgets
-
-# TODO: Wofi File Finder
-# Create a script to find files with wofi and open them with dolphin
-
-# TODO: Wofi Find Windows
-# Create a script to find  windows with wofi and navigate to them
+# TODO: Rofi Utils
+# Create a script with rofi to browse utilities like:
+# - [ ] Wallpaper Manager
+# - [x] Clipboard Manager (Super V)
+# - [x] Emoji Picker (modi)
+# - [x] File Browser (modi)
+# - [x] Window Switcher (Alt Shift Tab)
+# - [x] Hyprland Keybinds (Super Shift ?)
+# - [x] Calculator (modi)
+# - [ ] Wifi Menu
+# - [ ] Logout Menu
+# - [ ] Run Scripts
