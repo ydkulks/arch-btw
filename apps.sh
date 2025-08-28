@@ -61,7 +61,7 @@ yay -S kvantum qt6ct breeze-icons kvantum-qt5 qt5ct papirus-icon-theme archlinux
 
 # TODO: Rofi Utils
 # Create a script with rofi to browse utilities like:
-# - [ ] Wallpaper Manager
+# - [x] Wallpaper Manager
 # - [x] Clipboard Manager (Super V)
 # - [x] Emoji Picker (modi)
 # - [x] File Browser (modi)
@@ -70,4 +70,4 @@ yay -S kvantum qt6ct breeze-icons kvantum-qt5 qt5ct papirus-icon-theme archlinux
 # - [x] Calculator (modi)
 # - [ ] Wifi Menu
 # - [ ] Logout Menu
-# - [ ] Run Scripts
+# - [x] Run Scripts
