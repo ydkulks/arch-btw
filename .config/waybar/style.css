@@ -6,7 +6,8 @@
 
 #waybar {
   /* background: transparent; */
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
+  background: rgba(19, 21, 26, 0.9);
   /* margin-left: 10px; */
   /* margin-right: 10px; */
   /* border-radius: 10px; */
@@ -51,3 +52,6 @@
 /* #hyprland-workspaces button { */
 /*   background-color: rgba(0, 0, 0, 0.4); */
 /* } */
+#tooltip {
+  background-color: rgba(200, 204, 213, 0.8);
+}
