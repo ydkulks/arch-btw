@@ -1,0 +1,26 @@
+(defwindow powerMenu
+  :monitor 0
+  :exclusive false
+  :stack "fg"
+  :geometry (geometry :x "10px" :y "5px" :width "400px" :height "100px" :anchor "top left")
+  :orientation "vertical"
+  (box
+    (menus)))
+
+(defwidget menus []
+  (eventbox
+    :onhoverlost "../statusbar/scripts/power-menu-toggle.sh"
+    :orientation "vertical"
+    (box :class "powermenu"
+      (button :onclick "shutdown -h now"
+        :tooltip "Shutdown"
+        (label :text ""))
+      (button :onclick "reboot"
+        :tooltip "Reboot"
+        (label :text ""))
+      (button :onclick "hyprctl dispatch exec exit"
+        :tooltip "Logout"
+        (label :text "󰍃"))
+      (button :onclick "hyprctl dispatch exec hyprlock"
+        :tooltip "Lock"
+        (label :text "")))))

@@ -1,0 +1,149 @@
+;; NOTE: Main Statusbar
+(defwindow statusbar
+    :class "statusbar"
+    :monitor 0
+    :geometry (geometry
+                :x "0%"
+                :y "5px"
+                :height "30px"
+                :width "99.5%"
+                ;:width "1010px"
+                :anchor "top center")
+    :stacking "fg"
+    :exclusive true
+    ;;:focusable "ondemand"
+    :namespace "Statusbar"
+    ;;:reserve (struts :distance "50px" :side "bottom")
+    :windowtype "dock"
+    :wm-ignore false
+    (box
+      (left-panel)
+      (center-panel)
+      (right-panel)))
+
+;; NOTE: Panels, hyprlock, rofi bg
+(defwidget left-panel []
+  (box
+    :class "left-panel"
+    :space-evenly false
+    :halign "begin"
+    (power-menu)
+    (workspaces)))
+
+(defwidget center-panel []
+  (box
+    :class "center-panel"
+    (window_title)))
+
+(defwidget right-panel []
+  (box
+    :class "right-panel"
+    :space-evenly false
+    :halign "end"
+    ;;(apps)
+    (volume)
+    (wifi)
+    (time-date :show_date false)
+    (notifications)))
+
+;; NOTE: Widgets
+;; App drawer
+(defwidget apps []
+ (box
+  (button
+   :tooltip "Ghostty"
+   :onclick "cd $HOME;ghostty; sleep 1"
+   (label :text ""))
+  (button
+   :tooltip "Zen Browser"
+   :onclick "zen-browser; sleep 1"
+   (label :text ""))
+  (button
+   :tooltip "Dolphin"
+   :onclick "dolphin; sleep 1"
+   (label :text "󰉋"))))
+
+;; Power Menu
+(defwidget power-menu []
+  (eventbox
+   :onhover "./scripts/power-menu-toggle.sh"
+   (button
+     (label
+       :text "󰣇"))))
+
+;; Workspace
+(deflisten workspaces :initial "[]" "bash ./scripts/get-workspaces.sh")
+(deflisten current_workspace :initial "1" "bash ./scripts/get-active-workspace.sh")
+(defwidget workspaces []
+  (eventbox :onscroll "bash ./scripts/change-active-workspace.sh {} ${current_workspace}" :class "workspaces-widget"
+    (box :space-evenly true :class "workspaces-widget-box"
+      (for workspace in workspaces
+        (eventbox :onclick "hyprctl dispatch workspace ${workspace.id}"
+          (box :class "workspace-entry ${workspace.windows > 0 ? "occupied" : "empty"}"
+            (label :text "${workspace.symbol}" :class "workspace-entry")))))))
+
+
+;; Window Title
+(deflisten window :initial " " "sh ./scripts/get-window-title.sh") ; truncated
+(deflisten full_window :initial "..." "sh ./scripts/get-window-title-full.sh") ; full
+(defwidget window_title []
+  (box :width "50px"
+    (label
+      :text "${window}"
+      :tooltip "${full_window}")))
+
+;; Volume
+; TODO: Dynamic icon
+(deflisten volume-icon :initial " " "bash ./scripts/get-volume-icon.sh")
+(deflisten volume-percent :initial "--%" "bash ./scripts/get-volume-percentage.sh")
+(defwidget volume []
+  (eventbox
+    :tooltip "Volume: ${volume-percent}"
+    :onscroll "sh ./scripts/change-volume.sh {}"
+    (button
+      :onclick "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+      :onrightclick "pavucontrol &"
+      (label :text "${volume-icon}"))))
+
+;; Wifi
+; TODO: Dynamic icon
+(deflisten wifi-icon "tail -f /tmp/eww-wifi-icon")
+(deflisten wifi-ssid "tail -f /tmp/eww-wifi-ssid")
+(defwidget wifi []
+  (button
+    :tooltip "${wifi-ssid}"
+    :onclick "networkmanager_dmenu &"
+    ;:onclick "./scripts/wifiPopup.sh"
+    :onrightclick "ghostty -e nmtui &"
+    (label :text "${wifi-icon}")))
+
+;; Time & Date
+(defpoll time :interval "5s"
+  :initial `date +'%-I:%M %p'`
+  `date +'%-I:%M %p'`)
+(defpoll date :interval "60s"
+  :initial `date +'%a, %d %b'`
+  `date +'%a, %d %b'`)
+(defwidget time-date []
+  (button
+    :orientation "vertical" ;; Time above, date below
+    :class "time-box"
+    :onclick "gnome-calendar &"
+    :tooltip "Click to open calendar"
+    (box
+      :orientation "vertical"
+      :halign "center"
+      :class "time-date-box"
+      time
+      date)))
+
+;; Notifications
+;;(deflisten notification_icon :initial "" "bash ./scripts/get-notification-icon.sh")
+(defpoll notification_icon :initial "" :interval "3s" "bash ./scripts/get-notification-status.sh")
+(defwidget notifications []
+  (button
+    :tooltip "Notifications"
+    :onclick "swaync-client -t"
+    (label
+      :class "notification-icon"
+      :text "${notification_icon}")))
