@@ -49,3 +49,14 @@ Arch config for programming
 
 3. **Default Apps**:
     - `~/.config/mimeapps.list`
+
+4. **Eww**:
+    - [Getting Started](https://dharmx.is-a.dev/eww-powermenu/)
+    - Basic `eww` commands
+
+        ```sh
+        eww logs
+        eww open {wedget-name}
+        eww inspector
+        eww kill
+        ```

@@ -26,33 +26,53 @@ chmod 700 $GNUPGHOME
 ssh-keygen -t rsa
 ssh-agent ~/.ssh/id_rsa
 
-# TUI
+# Timeshift
+yay -S timeshift grub-btrfs inotify-tools timeshift-autosnap
+sudo systemctl enable grub-btrfsd
+sudo systemctl start grub-btrfsd
+#sudo systemctl edit --full grub-btrfsd # Modify for timeshift compatibility
+
+# Terminal
+yay -S ghostty
+
+# Login Manager
 yay -S ly
 sudo systemctl enable ly.service
 
+# Command Line Tools
 yay -S fastfetch btop htop yazi lazygit
+
+# Editor
 yay -S neovim
 
-# GUI
-yay -S kitty ghostty hyprland hyprlock-git hyprpicker hyprpaper hyprshot waybar rofi rofi-emoji wtype pavucontrol pipewire-pulse swaync libnotify bibata-cursor-theme-bin banana-cursor-bin
+# Hyprland
+yay -S hyprland hyprlock-git hyprpicker hyprpaper hyprshot
+
+# Cursor
+yay -S bibata-cursor-theme-bin banana-cursor-bin
+
+# Status Bar
+yay -S pavucontrol pipewire-pulse swaync libnotify nm-connection-editor network-manager-applet
+# EWW
+yay -S eww-git socat gnome-calendar glib2 dconf networkmanager-dmenu-git
+
 
 # Rofi
-yay -S rofi rofi-emoji cliphist wl-clipboard rofi-calc
+yay -S rofi rofi-emoji cliphist wtype wl-clipboard rofi-calc
 
 # GPU (AMD Radeon RX 6700 XT)
 # yay -S mesa libva-mesa-driver vulkan-radeon
 
 # Fonts
-yay -S ttf-jetbrains-mono-nerd ttf-roboto ttf-kannada-font noto-fonts-cjk noto-fontse-emoji
+yay -S ttf-jetbrains-mono-nerd ttf-roboto ttf-kannada-font noto-fonts-cjk noto-fontse-emoji ttf-oswald
 
 # Apps
-yay -S dolphin zen-browser-bin keepass obs-studio krita qimgv ark
+yay -S dolphin zen-browser-bin keepass obs-studio krita qimgv ark evince localsend-bin libreoffice-still
 
 # Configure QT based apps(Dolphin)
 yay -S kvantum qt6ct breeze-icons kvantum-qt5 qt5ct papirus-icon-theme archlinux-xdg-menu kde-cli-tools
 
 # TODO: Customize
-# Swaync
 # Fastfetch
 
 # TODO: Install
@@ -68,6 +88,4 @@ yay -S kvantum qt6ct breeze-icons kvantum-qt5 qt5ct papirus-icon-theme archlinux
 # - [x] Window Switcher (Alt Shift Tab)
 # - [x] Hyprland Keybinds (Super Shift ?)
 # - [x] Calculator (modi)
-# - [ ] Wifi Menu
-# - [ ] Logout Menu
 # - [x] Run Scripts
