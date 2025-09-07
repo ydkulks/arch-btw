@@ -9,12 +9,15 @@ ln -s $CONFIG_DIR/.config/hypr/scripts/ $HOME/.config/hypr/scripts
 # Create symlinks for Hyprlock
 ln -s $CONFIG_DIR/.config/hypr/hyprlock.conf $HOME/.config/hypr/hyprlock.conf
 
-# Create symlinks for Waybar
-ln -s $CONFIG_DIR/.config/waybar/ $HOME/.config/waybar
+# # Create symlinks for Waybar
+# ln -s $CONFIG_DIR/.config/waybar/ $HOME/.config/waybar
 
 # # Create symlinks for Wofi
 # ln -s $CONFIG_DIR/.config/wofi/ $HOME/.config/wofi
 # chmod +x $HOME/.config/hypr/scripts/wofi_toggle.sh
+
+# Create symlinks for fastfetch
+ln -s $CONFIG_DIR/.config/fastfetch/ $HOME/.config/fastfetch
 
 # Create symlinks for Rofi
 ln -s $CONFIG_DIR/.config/rofi/ $HOME/.config/rofi

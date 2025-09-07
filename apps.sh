@@ -40,7 +40,7 @@ yay -S ly
 sudo systemctl enable ly.service
 
 # Command Line Tools
-yay -S fastfetch btop htop yazi lazygit
+yay -S fastfetch imagemagick pokemon-colorscripts-git btop yazi docker lazygit
 
 # Editor
 yay -S neovim
@@ -71,21 +71,3 @@ yay -S dolphin zen-browser-bin keepass obs-studio krita qimgv ark evince localse
 
 # Configure QT based apps(Dolphin)
 yay -S kvantum qt6ct breeze-icons kvantum-qt5 qt5ct papirus-icon-theme archlinux-xdg-menu kde-cli-tools
-
-# TODO: Customize
-# Fastfetch
-
-# TODO: Install
-# Timeshift for GRUB,
-# Widgets
-
-# TODO: Rofi Utils
-# Create a script with rofi to browse utilities like:
-# - [x] Wallpaper Manager
-# - [x] Clipboard Manager (Super V)
-# - [x] Emoji Picker (modi)
-# - [x] File Browser (modi)
-# - [x] Window Switcher (Alt Shift Tab)
-# - [x] Hyprland Keybinds (Super Shift ?)
-# - [x] Calculator (modi)
-# - [x] Run Scripts
