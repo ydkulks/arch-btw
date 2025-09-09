@@ -9,7 +9,7 @@
 
 (defwidget menus []
   (eventbox
-    :onhoverlost "../statusbar/scripts/power-menu-toggle.sh"
+    :onhoverlost "./scripts/power-menu-toggle.sh"
     :orientation "vertical"
     (box :class "powermenu"
       (button :onclick "shutdown -h now"

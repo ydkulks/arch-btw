@@ -41,6 +41,7 @@
     :space-evenly false
     :halign "end"
     ;;(apps)
+    (systray-widget)
     (volume)
     (wifi)
     (time-date :show_date false)
@@ -66,7 +67,7 @@
 ;; Power Menu
 (defwidget power-menu []
   (eventbox
-   :onhover "./scripts/power-menu-toggle.sh"
+   :onhover "../powerMenu/scripts/power-menu-toggle.sh"
    (button
      (label
        :text "󰣇"))))
@@ -92,8 +93,16 @@
       :text "${window}"
       :tooltip "${full_window}")))
 
+;; Systray
+(defwidget systray-widget []
+  (eventbox
+    :tooltip "System Tray"
+    :onhover "../systray/scripts/systray-toggle.sh"
+    (button
+      (label
+        :text ""))))
+
 ;; Volume
-; TODO: Dynamic icon
 (deflisten volume-icon :initial " " "bash ./scripts/get-volume-icon.sh")
 (deflisten volume-percent :initial "--%" "bash ./scripts/get-volume-percentage.sh")
 (defwidget volume []
@@ -106,7 +115,6 @@
       (label :text "${volume-icon}"))))
 
 ;; Wifi
-; TODO: Dynamic icon
 (deflisten wifi-icon "tail -f /tmp/eww-wifi-icon")
 (deflisten wifi-ssid "tail -f /tmp/eww-wifi-ssid")
 (defwidget wifi []
@@ -147,3 +155,6 @@
     (label
       :class "notification-icon"
       :text "${notification_icon}")))
+
+(deflisten systray-load :initial "" "eww daemon --config ../systray/")
+(deflisten power-menu-load :initial "" "eww daemon --config ../powerMenu/")

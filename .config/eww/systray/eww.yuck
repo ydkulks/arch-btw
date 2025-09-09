@@ -1,0 +1,14 @@
+(defwindow systrayWindow
+  :monitor 0
+  :exclusive false
+  :stack "fg"
+  :geometry (geometry :x "100px" :y "5px" :width "100px" :height "100px" :anchor "top right")
+  (box
+    (systray-widget)))
+
+(defwidget systray-widget []
+  (eventbox
+    :onhoverlost "./scripts/systray-toggle.sh"
+    ;:orientation "vertical"
+    (systray :class "systray")))
+
