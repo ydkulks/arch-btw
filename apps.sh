@@ -68,6 +68,7 @@ yay -S ttf-jetbrains-mono-nerd ttf-roboto ttf-kannada-font noto-fonts-cjk noto-f
 
 # Apps
 yay -S dolphin zen-browser-bin keepass obs-studio krita qimgv ark evince localsend-bin libreoffice-still
+yay -S rhythmbox
 
 # Configure QT based apps(Dolphin)
 yay -S kvantum qt6ct breeze-icons kvantum-qt5 qt5ct papirus-icon-theme archlinux-xdg-menu kde-cli-tools

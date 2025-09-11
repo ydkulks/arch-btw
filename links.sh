@@ -38,3 +38,6 @@ ln -s $CONFIG_DIR/.config/swaync/ $HOME/.config/swaync
 # Create symlink for Eww
 ln -s $CONFIG_DIR/.config/eww/ $HOME/.config/eww
 ln -s $CONFIG_DIR/.config/networkmanager-dmenu/ $HOME/.config/networkmanager-dmenu
+
+# Create symlink for btop
+ln -s $CONFIG_DIR/.config/btop/ $HOME/.config/btop
