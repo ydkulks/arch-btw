@@ -1,5 +1,5 @@
 [Colors:View]
-BackgroundNormal=#373737
+BackgroundNormal=30,33,39
 
 [Icons]
 Theme=Papirus-Dark
