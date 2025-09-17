@@ -47,6 +47,7 @@ yay -S neovim
 
 # Hyprland
 yay -S hyprland hyprlock-git hyprpicker hyprpaper hyprshot
+yay -S nsxiv xorg-xrdb
 
 # Cursor
 yay -S bibata-cursor-theme-bin banana-cursor-bin

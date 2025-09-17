@@ -1,0 +1,10 @@
+! nsxiv settings
+Nsxiv.window.background:  #1E2127
+Nsxiv.window.foreground:  #85A4C3
+
+Nsxiv.bar.background:     #1E2127
+Nsxiv.bar.foreground:     #535D71
+
+Nsxiv.mark.foreground:    #EACC90
+
+Nsxiv.bar.font: JetBrainsMono Nerd Font 10
