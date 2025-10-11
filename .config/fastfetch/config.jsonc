@@ -11,13 +11,14 @@
   "logo": {
     // "source": "/home/yd/.config/fastfetch/images/hypr.png",
     // "source": "/home/yd/Downloads/dandadan-granny-seiko.png",
-    "source": "~/.config/fastfetch/images/Okarun.png",
-    "type": "kitty",
-    // "type": "command-raw",
-    // "source": "pokemon-colorscripts --no-title -r 1-8",
+    // "source": "~/.config/fastfetch/images/Okarun.png",
+    // "source": "/home/yd/Pictures/Wallpapers/animegirl_1:1.jpg",
+    // "type": "kitty",
+    "type": "command-raw",
+    "source": "pokemon-colorscripts --no-title -r 1-8",
     "height": 18,
     "padding": {
-      "top": 2,
+      "top": 3,
       "left": 2
     }
   },
