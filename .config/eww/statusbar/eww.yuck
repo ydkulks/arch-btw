@@ -4,9 +4,9 @@
     :monitor 0
     :geometry (geometry
                 :x "0%"
-                :y "5px"
+                :y "10px"
                 :height "30px"
-                :width "99.5%"
+                :width "99%"
                 ;:width "1010px"
                 :anchor "top center")
     :stacking "fg"
@@ -21,7 +21,7 @@
       (center-panel)
       (right-panel)))
 
-;; NOTE: Panels, hyprlock, rofi bg
+;; NOTE: Panels
 (defwidget left-panel []
   (box
     :class "left-panel"
@@ -69,6 +69,7 @@
   (eventbox
    :onhover "../powerMenu/scripts/power-menu-toggle.sh"
    (button
+    :class "power-menu-button"
      (label
        :text "󰣇"))))
 
@@ -99,6 +100,7 @@
     :tooltip "System Tray"
     :onhover "../systray/scripts/systray-toggle.sh"
     (button
+      :class "systray-button"
       (label
         :text ""))))
 
@@ -119,6 +121,7 @@
 (deflisten wifi-ssid "tail -f /tmp/eww-wifi-ssid")
 (defwidget wifi []
   (button
+    :class "wifi-button"
     :tooltip "${wifi-ssid}"
     :onclick "networkmanager_dmenu &"
     ;:onclick "./scripts/wifiPopup.sh"
@@ -150,6 +153,7 @@
 (defpoll notification_icon :initial "" :interval "3s" "bash ./scripts/get-notification-status.sh")
 (defwidget notifications []
   (button
+    :class "notification-button"
     :tooltip "Notifications"
     :onclick "swaync-client -t"
     (label
