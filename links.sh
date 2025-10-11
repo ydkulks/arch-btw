@@ -9,6 +9,9 @@ ln -s $CONFIG_DIR/.config/hypr/scripts/ $HOME/.config/hypr/scripts
 # Create symlinks for Hyprlock
 ln -s $CONFIG_DIR/.config/hypr/hyprlock.conf $HOME/.config/hypr/hyprlock.conf
 
+# Create symlinks for Hyprsunset
+ln -s $CONFIG_DIR/.config/hypr/hyprsunset.conf $HOME/.config/hypr/hyprsunset.conf
+
 # # Create symlinks for Waybar
 # ln -s $CONFIG_DIR/.config/waybar/ $HOME/.config/waybar
 
