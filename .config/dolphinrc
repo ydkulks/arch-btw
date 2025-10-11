@@ -14,7 +14,7 @@ ViewFont=Roboto,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [ExtractDialog]
 2560x1440 screen: Window-Maximized=true
-DirHistory[$e]=$HOME/Documents/
+DirHistory[$e]=$HOME/Projects/,$HOME/Documents/
 
 [General]
 OpenExternallyCalledFolderInNewTab=true
