@@ -2,7 +2,11 @@
   :monitor 0
   :exclusive false
   :stack "fg"
-  :geometry (geometry :x "100px" :y "5px" :width "100px" :height "100px" :anchor "top right")
+  :class "systrayWindow"
+  :geometry (geometry 
+              :x "100px"
+              :y "5px"
+              :anchor "top right")
   (box
     (systray-widget)))
 
