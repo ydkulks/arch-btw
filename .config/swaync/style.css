@@ -40,6 +40,7 @@
   --accent-magenta: #B692B0;
 
   background: var(--cc-bg);
+  margin: 10px;
 }
 
 .close-button {
@@ -79,7 +80,7 @@
 
 .notification-row .notification-background .notification {
   /* The actual notification */
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid var(--noti-border-color);
   padding: 5px;
   transition: background 0.15s ease-in-out;
