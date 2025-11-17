@@ -1,5 +1,9 @@
 MenuBar=Disabled
 
+[CompactMode]
+UseSystemFont=false
+ViewFont=Roboto Medium,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Regular
+
 [ContentDisplay]
 UseShortRelativeDates=false
 
@@ -10,11 +14,11 @@ ShowOpenTerminal=false
 
 [DetailsMode]
 UseSystemFont=false
-ViewFont=Roboto,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+ViewFont=Roboto Medium,10,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Regular
 
 [ExtractDialog]
 2560x1440 screen: Window-Maximized=true
-DirHistory[$e]=$HOME/Projects/,$HOME/Documents/
+DirHistory[$e]=$HOME/.themes/,$HOME/Projects/,$HOME/Documents/
 
 [General]
 OpenExternallyCalledFolderInNewTab=true
@@ -24,8 +28,9 @@ Version=202
 ViewPropsTimestamp=2025,8,16,23,52,0.186
 
 [IconsMode]
+PreviewSize=80
 UseSystemFont=false
-ViewFont=Roboto,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+ViewFont=Roboto Medium,11,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Regular
 
 [InformationPanel]
 dateFormat=ShortFormat
@@ -41,7 +46,7 @@ MenuBar=Disabled
 ToolButtonStyle=IconOnly
 
 [PreviewSettings]
-Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,heif,imagethumbnail,jpegthumbnail,jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,librsvg,svgthumbnail,gdk-pixbuf-thumbnailer
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,heif,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
 
 [Toolbar mainToolBar]
 ToolButtonStyle=IconOnly

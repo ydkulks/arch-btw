@@ -68,8 +68,16 @@ yay -S rofi rofi-emoji cliphist wtype wl-clipboard rofi-calc
 yay -S ttf-jetbrains-mono-nerd ttf-roboto ttf-kannada-font noto-fonts-cjk noto-fontse-emoji ttf-oswald
 
 # Apps
-yay -S dolphin zen-browser-bin keepass obs-studio krita qimgv ark evince localsend-bin libreoffice-still
-yay -S rhythmbox
+yay -S dolphin nautilus zen-browser-bin keepass obs-studio krita qimgv ark evince localsend-bin libreoffice-still
+yay -S rhythmbox notion-app-electron bruno-bin
 
-# Configure QT based apps(Dolphin)
-yay -S kvantum qt6ct breeze-icons kvantum-qt5 qt5ct papirus-icon-theme archlinux-xdg-menu kde-cli-tools
+# Icon packs
+yay -S breeze-icons papirus-icon-theme-git papirus-folders-git
+sudo papirus-folders -C nordic --theme Papirus
+
+# GTK3/4 settings
+yay -S nwg-look-git
+
+# GTK3/4 theme
+# 1. Download the theme: https://www.gnome-look.org/p/1267246
+# 2. Extract the zip file into ~/.themes directory
