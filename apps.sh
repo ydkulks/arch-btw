@@ -40,7 +40,7 @@ yay -S ly
 sudo systemctl enable ly.service
 
 # Command Line Tools
-yay -S fastfetch imagemagick pokemon-colorscripts-git btop yazi docker lazygit
+yay -S fastfetch imagemagick pokemon-colorscripts-git btop yazi docker lazygit ncdu zoxide mtr
 
 # Editor
 yay -S neovim
