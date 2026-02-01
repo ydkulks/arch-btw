@@ -41,6 +41,7 @@ sudo systemctl enable ly.service
 
 # Command Line Tools
 yay -S fastfetch imagemagick pokemon-colorscripts-git btop yazi docker lazygit ncdu zoxide mtr
+ya pkg add llanosrocas/githead
 
 # Editor
 yay -S neovim
